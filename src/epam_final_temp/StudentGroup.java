@@ -43,7 +43,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		if(index<0||index>=students.length) {
+		if(index>=students.length ||index<0) {
 			throw new IllegalArgumentException();
 		}
 		else
